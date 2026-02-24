@@ -1,0 +1,13 @@
+log = no-container.log
+
+transfer_input_files = python-test.py
+
+shell = python3 python-test.py
+output = no-container.out
+error = no-container.err
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1GB
+
+queue 1

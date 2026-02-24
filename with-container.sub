@@ -1,0 +1,15 @@
+log = with-container.log
+
+container_image = my-container.sif
+
+transfer_input_files = python-test.py
+
+shell = python3 python-test.py
+output = with-container.out
+error = with-container.err
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1GB
+
+queue 1
